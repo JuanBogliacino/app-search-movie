@@ -1,0 +1,159 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: rgba(41, 41, 85, 0.966);
+    color: #fff;
+    min-width: 320px;
+    margin: 0;
+  }
+  
+  .link-home {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+
+  .form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+  }
+  
+  .form input {
+    height: 25px;
+    border: none;
+    padding: 5px;
+    width: 70%;
+    max-width: 250px;
+    font-size: 15px;
+    border-bottom: 2px solid #cdcacc;
+    background-color: rgb(35, 35, 73);
+    color: #fff;
+  }
+
+  .div-checkbox {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+    flex-direction: row-reverse;
+  }
+
+  .div-checkbox input {
+    width: 20px;
+  }
+
+  .form input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(25, 129, 226);
+  }
+
+  .no-results, .loading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .error {
+    text-align: center;
+    color: rgb(255, 17, 17);
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .movies {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+
+  .link-movies {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .movie {
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .movie img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+  }
+
+  .movie img:hover {
+    height: 520px;
+  }
+
+  .movie-detail {
+    background-color: #090b17;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .movie-detail img {
+    width: 100%;
+    border: 1px solid #ffffff;
+    
+  }
+
+  .not-found-detail {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .not-found-detail .link {
+    text-decoration: none;
+    color: #4861ed;
+  }
+
+  .not-found-detail .link:hover {
+    color: #1f40f8;
+  }
+
+  @media (max-width: 500px) {
+    .link-home h1 {
+        font-size: 25px;
+    }
+
+    .form {
+      flex-direction: column;
+    }
+
+    .error {
+      font-size: 15px;
+    }
+
+    .not-found-detail {
+      font-size: 14px;
+    }
+  }
