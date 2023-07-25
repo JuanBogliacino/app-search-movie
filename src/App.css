@@ -7,7 +7,7 @@
   }
   
   body {
-    background-color: rgba(41, 41, 85, 0.966);
+    background: linear-gradient(to right, #360101, rgb(180, 12, 12));
     color: #fff;
     min-width: 320px;
     margin: 0;
@@ -34,9 +34,7 @@
     width: 70%;
     max-width: 250px;
     font-size: 15px;
-    border-bottom: 2px solid #cdcacc;
-    background-color: rgb(35, 35, 73);
-    color: #fff;
+    border-radius: 5px;
   }
 
   .div-checkbox {
@@ -52,11 +50,6 @@
     width: 20px;
   }
 
-  .form input:focus {
-    outline: none;
-    border-bottom: 2px solid rgb(25, 129, 226);
-  }
-
   .no-results, .loading {
     font-size: 20px;
     text-align: center;
@@ -64,7 +57,6 @@
 
   .error {
     text-align: center;
-    color: rgb(255, 17, 17);
     font-size: 17px;
     font-weight: 500;
   }
@@ -110,7 +102,7 @@
   }
 
   .movie-detail {
-    background-color: #090b17;
+    background: linear-gradient(to bottom, #0a0a0a, #2b1010);
     width: 80%;
     max-width: 400px;
     margin: auto;

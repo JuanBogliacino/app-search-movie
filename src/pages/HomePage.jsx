@@ -66,7 +66,7 @@ const HomePage = () => {
          <input type="checkbox" onChange={handleSort} checked={sort} />
         </div>
     </form>
-    {error && <p className="error">{error}</p>}
+    {error && <p className="error">{error}*</p>}
 
     {loading ? <p className="loading">Cargando...</p> : <Movies movies={movies}/>}
     </>
